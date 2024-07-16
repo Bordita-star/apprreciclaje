@@ -7,13 +7,10 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import java.security.Principal;
 
 public class MenuPrincipal extends AppCompatActivity {
+
+    private View register_recycling;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +21,14 @@ public class MenuPrincipal extends AppCompatActivity {
         Button consejos = findViewById(R.id.button10);
         Button beneficios = findViewById(R.id.button11);
         Button contador = findViewById(R.id.button12);
-        Button estadísticas = findViewById(R.id.button13);
+        Button recycling = findViewById(R.id.button13);
         Button categorizacíon = findViewById(R.id.button19);
         Button cerrarSesion = findViewById(R.id.button14);
 
         consejos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent consejos = new Intent(MenuPrincipal.this, Consejosreciclaje.class);
+                Intent consejos = new Intent(MenuPrincipal.this, ConsejosReciclaje.class);
                 startActivity(consejos);
             }
         });
@@ -39,7 +36,7 @@ public class MenuPrincipal extends AppCompatActivity {
         beneficios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Beneficios = new Intent(MenuPrincipal.this, beneficios.class);
+                Intent Beneficios = new Intent(MenuPrincipal.this, com.example.reciclajeapp.Beneficios.class);
                 startActivity(Beneficios);
             }
         });
@@ -47,22 +44,22 @@ public class MenuPrincipal extends AppCompatActivity {
         contador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Contador = new Intent(MenuPrincipal.this, Contadorrecompensa.class);
+                Intent Contador = new Intent(MenuPrincipal.this, ContadorRecompensa.class);
                 startActivity(Contador);
             }
         });
 
-        estadísticas.setOnClickListener(new View.OnClickListener() {
+        recycling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Estadisticas = new Intent(MenuPrincipal.this, Estadisticas.class);
-                startActivity(Estadisticas);
+                Intent RegisterRecycling = new Intent(MenuPrincipal.this,com.example.reciclajeapp.RegisterRecycling.class);
+                startActivity(RegisterRecycling );
             }
         });
         categorizacíon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Categorizacion = new Intent(MenuPrincipal.this, categorizacion.class);
+                Intent Categorizacion = new Intent(MenuPrincipal.this, com.example.reciclajeapp.Categorizacion.class);
                 startActivity(Categorizacion);
             }
         });

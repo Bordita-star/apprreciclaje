@@ -22,8 +22,8 @@
 
         <ImageView
             android:id="@+id/recicla.png"
-            android:layout_width="153dp"
-            android:layout_height="140dp"
+            android:layout_width="130dp"
+            android:layout_height="120dp"
             android:layout_gravity="center"
             android:layout_marginTop="5dp"
             app:srcCompat="@drawable/recicla" />
@@ -38,34 +38,59 @@
             android:textStyle="bold" />
 
         <EditText
-            android:id="@+id/editText4"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            android:id="@+id/Correo"
+            android:layout_width="250dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="10dp"
             android:layout_marginTop="35dp"
-            android:ems="10"
+            android:ems="1"
             android:hint="Correo"
             android:inputType="text"
             android:textSize="20dp"
             android:textStyle="bold" />
 
-        <EditText
-            android:id="@+id/editText5"
-            android:layout_width="match_parent"
+        <LinearLayout
+            android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:ems="10"
-            android:hint="Contraseña"
-            android:inputType="text"
-            android:textSize="20dp"
-            android:textStyle="bold" />
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:paddingStart="10dp"
+            android:paddingLeft="10dp"
+            android:paddingEnd="10dp"
+            android:paddingRight="10dp">
+
+            <EditText
+                android:id="@+id/password"
+                android:layout_width="250dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="20dp"
+                android:ems="1"
+                android:hint="Contraseña"
+                android:inputType="text"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/toggleVisibility"
+                android:layout_width="55dp"
+                android:layout_height="68dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginTop="10dp"
+                android:background="@null"
+                android:scaleType="centerInside"
+                android:visibility="visible"
+                app:srcCompat="@drawable/visibility_off" />
+
+        </LinearLayout>
 
 
     </LinearLayout>
 
     <LinearLayout
         android:id="@+id/linearLayout2"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="330dp"
+        android:layout_height="154dp"
         android:layout_marginStart="23dp"
         android:layout_marginTop="363dp"
         android:layout_marginEnd="23dp"
@@ -80,8 +105,10 @@
             android:id="@+id/imageView"
             android:layout_width="125dp"
             android:layout_height="100dp"
+            android:layout_marginTop="35dp"
             android:layout_weight="1"
             app:srcCompat="@drawable/boton" />
+
     </LinearLayout>
 
     <LinearLayout
@@ -108,7 +135,7 @@
             android:backgroundTint="@color/verde"
             android:text="Olvide contraseña"
             android:textSize="20dp"
-            android:textStyle="bold"/>
+            android:textStyle="bold" />
 
         <Button
             android:id="@+id/registrarusuario"

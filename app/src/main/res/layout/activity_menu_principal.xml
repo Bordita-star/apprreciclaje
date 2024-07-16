@@ -75,7 +75,7 @@
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:text="Estadísticas"
+            android:text="Registrar reciclaje"
             android:layout_marginTop="15dp"
             android:backgroundTint="@color/verde"
             android:textSize="25dp"/>

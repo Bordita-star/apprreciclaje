@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:background="@drawable/fondopantalla"
     android:padding="10dp"
-    tools:context=".Registro_usuario">
+    tools:context=".RegistroUsuario">
 
     <LinearLayout
         android:id="@+id/linearLayout"
