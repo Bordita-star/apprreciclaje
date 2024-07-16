@@ -4,16 +4,10 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.TextView;
 
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class MainActivity extends AppCompatActivity {
     int editText4;
@@ -45,14 +39,14 @@ public class MainActivity extends AppCompatActivity {
         Registrarusuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registrarusuario = new Intent(MainActivity.this,Registro_usuario.class);
+                Intent registrarusuario = new Intent(MainActivity.this, RegistroUsuario.class);
                 startActivity(registrarusuario);
             }
         });
        Recuperarclave.setOnClickListener(new View.OnClickListener() {
          @Override
            public void onClick(View v) {
-             Intent recuperarclave = new Intent(MainActivity.this,Recuperarclave.class);
+             Intent recuperarclave = new Intent(MainActivity.this, RecuperarClave.class);
              startActivity(recuperarclave);
 
          }

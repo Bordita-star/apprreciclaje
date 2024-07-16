@@ -7,11 +7,6 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
-
-import java.security.Principal;
 
 public class MenuPrincipal extends AppCompatActivity {
 
@@ -31,7 +26,7 @@ public class MenuPrincipal extends AppCompatActivity {
         consejos.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent consejos = new Intent(MenuPrincipal.this, Consejosreciclaje.class);
+                Intent consejos = new Intent(MenuPrincipal.this, ConsejosReciclaje.class);
                 startActivity(consejos);
             }
         });
@@ -39,7 +34,7 @@ public class MenuPrincipal extends AppCompatActivity {
         beneficios.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Beneficios = new Intent(MenuPrincipal.this, beneficios.class);
+                Intent Beneficios = new Intent(MenuPrincipal.this, com.example.reciclajeapp.Beneficios.class);
                 startActivity(Beneficios);
             }
         });
@@ -47,7 +42,7 @@ public class MenuPrincipal extends AppCompatActivity {
         contador.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Contador = new Intent(MenuPrincipal.this, Contadorrecompensa.class);
+                Intent Contador = new Intent(MenuPrincipal.this, ContadorRecompensa.class);
                 startActivity(Contador);
             }
         });
@@ -62,7 +57,7 @@ public class MenuPrincipal extends AppCompatActivity {
         categorizacíon.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Categorizacion = new Intent(MenuPrincipal.this, categorizacion.class);
+                Intent Categorizacion = new Intent(MenuPrincipal.this, com.example.reciclajeapp.Categorizacion.class);
                 startActivity(Categorizacion);
             }
         });

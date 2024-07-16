@@ -7,9 +7,6 @@ import android.widget.Button;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.graphics.Insets;
-import androidx.core.view.ViewCompat;
-import androidx.core.view.WindowInsetsCompat;
 
 public class Registro extends AppCompatActivity {
 
@@ -24,7 +21,7 @@ public class Registro extends AppCompatActivity {
         Calcular.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Calcular = new Intent(Registro.this,Contadorrecompensa.class);
+                Intent Calcular = new Intent(Registro.this, ContadorRecompensa.class);
                 startActivity(Calcular);
             }
         });

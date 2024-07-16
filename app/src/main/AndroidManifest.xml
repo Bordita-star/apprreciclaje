@@ -22,7 +22,7 @@
             android:name=".Estadisticas"
             android:exported="false" />
         <activity
-            android:name=".Contadorrecompensa"
+            android:name=".ContadorRecompensa"
             android:exported="false" />
         <activity
             android:name=".MenuPrincipal"
@@ -31,19 +31,19 @@
             android:name=".RegistroReciclaje"
             android:exported="false" />
         <activity
-            android:name=".categorizacion"
+            android:name=".Categorizacion"
             android:exported="false" />
         <activity
-            android:name=".beneficios"
+            android:name=".Beneficios"
             android:exported="false" />
         <activity
-            android:name=".Consejosreciclaje"
+            android:name=".ConsejosReciclaje"
             android:exported="false" />
         <activity
-            android:name=".Recuperarclave"
+            android:name=".RecuperarClave"
             android:exported="false" />
         <activity
-            android:name=".Registro_usuario"
+            android:name=".RegistroUsuario"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
