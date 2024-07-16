@@ -13,6 +13,9 @@
         android:theme="@style/Theme.ReciclajeApp"
         tools:targetApi="31">
         <activity
+            android:name=".ejemplo"
+            android:exported="false" />
+        <activity
             android:name=".Registro"
             android:exported="false" />
         <activity
