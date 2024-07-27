@@ -45,14 +45,14 @@ public class MainActivity extends AppCompatActivity {
         Registrarusuario.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent registrarusuario = new Intent(MainActivity.this,Registro_usuario.class);
-                startActivity(registrarusuario);
+                Intent Registrarusuario = new Intent(MainActivity.this,RegistroUsuario.class);
+                startActivity(Registrarusuario);
             }
         });
        Recuperarclave.setOnClickListener(new View.OnClickListener() {
          @Override
            public void onClick(View v) {
-             Intent recuperarclave = new Intent(MainActivity.this,Recuperarclave.class);
+             Intent recuperarclave = new Intent(MainActivity.this,RecuperarClave.class);
              startActivity(recuperarclave);
 
          }
