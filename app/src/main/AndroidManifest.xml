@@ -13,13 +13,7 @@
         android:theme="@style/Theme.ReciclajeApp"
         tools:targetApi="31">
         <activity
-            android:name=".ejemplo"
-            android:exported="false" />
-        <activity
-            android:name=".Registro"
-            android:exported="false" />
-        <activity
-            android:name=".Register_Recycling"
+            android:name=".RegisterRecycling"
             android:exported="false" />
         <activity
             android:name=".ContadorRecompensa"
@@ -28,7 +22,7 @@
             android:name=".MenuPrincipal"
             android:exported="false" />
         <activity
-            android:name=".RegistroReciclaje"
+            android:name=".Registro"
             android:exported="false" />
         <activity
             android:name=".Categorizacion"
