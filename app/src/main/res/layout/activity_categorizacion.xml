@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondopantalla"
+    android:background="@drawable/fondopantalla1"
     android:padding="10dp"
     android:paddingStart="10dp"
     android:paddingLeft="10dp"
@@ -71,7 +71,7 @@
             android:layout_height="46dp"
             android:layout_gravity="center"
             android:layout_marginTop="10dp"
-            android:backgroundTint="@color/verde"
+            android:backgroundTint="#9A1C5F1F"
             android:text="Seleccionar"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -85,7 +85,7 @@
             android:layout_gravity="center"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:backgroundTint="@color/verde"/>
+            android:backgroundTint="#9A1C5F1F"/>
 
 
     </LinearLayout>

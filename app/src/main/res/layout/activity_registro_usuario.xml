@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondopantalla"
+    android:background="@drawable/fondopantalla1"
     android:padding="10dp"
     tools:context=".RegistroUsuario">
 
@@ -29,9 +29,8 @@
 
         <ImageView
             android:id="@+id/recicla.png"
-            android:layout_width="153dp"
-            android:layout_height="140dp"
-            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="90dp"
             app:srcCompat="@drawable/recicla" />
 
         <TextView
@@ -113,7 +112,7 @@
             android:layout_width="174dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
-            android:backgroundTint="@color/verde"
+            android:backgroundTint="#9A1C5F1F"
             android:text="Registrarse"
             android:textSize="20dp" />
 

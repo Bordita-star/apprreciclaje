@@ -1,3 +1,9 @@
 <resources>
     <string name="app_name">ReciclajeApp</string>
+    <string-array name="materiales_array">
+        <item>Cartón</item>
+        <item>Plástico</item>
+        <item>Vidrio</item>
+        <item>Lata</item>
+    </string-array>
 </resources>

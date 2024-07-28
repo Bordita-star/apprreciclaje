@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/fondopantalla"
+    android:background="@drawable/fondopantalla1"
     android:padding="10dp"
     tools:context=".ContadorRecompensa">
 
@@ -22,9 +22,8 @@
 
         <ImageView
             android:id="@+id/imageView9"
-            android:layout_width="153dp"
-            android:layout_height="140dp"
-            android:layout_gravity="center"
+            android:layout_width="123dp"
+            android:layout_height="90dp"
             app:srcCompat="@drawable/recicla" />
 
         <TextView
@@ -91,7 +90,7 @@
             android:layout_gravity="center"
             android:textSize="20dp"
             android:textStyle="bold"
-            android:backgroundTint="@color/verde" />
+            android:backgroundTint="#9A1C5F1F" />
 
     </LinearLayout>
 

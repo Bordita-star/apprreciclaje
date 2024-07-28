@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MenuPrincipal"
-    android:background="@drawable/fondopantalla">
+    android:background="@drawable/fondopantalla1">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,9 +15,8 @@
 
         <ImageView
             android:id="@+id/recicla.png"
-            android:layout_width="143dp"
-            android:layout_height="130dp"
-            android:layout_gravity="center"
+            android:layout_width="120dp"
+            android:layout_height="95dp"
             android:layout_marginTop="5dp"
             app:srcCompat="@drawable/recicla" />
 
@@ -46,7 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
-            android:backgroundTint="@color/verde"
+            android:backgroundTint="#9A1C5F1F"
             android:text="Consejos"
             android:textSize="25dp"/>
 
@@ -56,7 +55,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:layout_gravity="center"
-            android:backgroundTint="@color/verde"
+            android:backgroundTint="#9A1C5F1F"
             android:text="Beneficios de reciclar"
             android:textSize="25dp"/>
 
@@ -67,7 +66,7 @@
             android:layout_gravity="center"
             android:layout_marginTop="15dp"
             android:textSize="25dp"
-            android:backgroundTint="@color/verde"
+            android:backgroundTint="#9A1C5F1F"
             android:text="Contador recompensa" />
 
         <Button
@@ -77,7 +76,7 @@
             android:layout_gravity="center"
             android:text="Registrar reciclaje"
             android:layout_marginTop="15dp"
-            android:backgroundTint="@color/verde"
+            android:backgroundTint="#9A1C5F1F"
             android:textSize="25dp"/>
 
         <Button
@@ -87,7 +86,7 @@
             android:layout_gravity="center"
             android:text="Categorización"
             android:layout_marginTop="15dp"
-            android:backgroundTint="@color/verde"
+            android:backgroundTint="#9A1C5F1F"
             android:textSize="25dp"/>
 
         <Button
@@ -96,7 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="70dp"
             android:layout_gravity="center"
-            android:backgroundTint="@color/verde"
+            android:backgroundTint="#9A1C5F1F"
             android:textSize="20dp"
             android:text="Cerrar Sesión" />
 
