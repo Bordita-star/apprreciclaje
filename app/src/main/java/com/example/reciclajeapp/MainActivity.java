@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
             String correo = editTextCorreo.getText().toString();
             String contraseña = editTextContraseña.getText().toString();
 
-            if (loginUser(correo, contraseña)) {
+           if (loginUser(correo, contraseña)) {
                 Intent intent = new Intent(MainActivity.this, MenuPrincipal.class);
                 startActivity(intent);
             } else {

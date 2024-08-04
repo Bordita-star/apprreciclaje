@@ -17,6 +17,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import java.util.ArrayList;
 import android.widget.AdapterView.OnItemSelectedListener;
+import java.util.Calendar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -40,6 +41,7 @@ public class RegisterRecycling extends AppCompatActivity {
     AdapterView<Adapter> spinnerMaterial;
     private SpinnerAdapter adapter;
     Spinner spinnerlistmaterial;
+    private int monthlyBonuses;
 
 
     @Override
@@ -57,6 +59,7 @@ public class RegisterRecycling extends AppCompatActivity {
         rewardsList = new ArrayList<>();
         rewardsAdapter = new ArrayAdapter<>(this, android.R.layout.simple_list_item_1, rewardsList);
         listViewRewards.setAdapter(rewardsAdapter);
+        monthlyBonuses = 0;
 
         pointsCarton = 0;
         pointsPlastico = 0;
@@ -66,9 +69,15 @@ public class RegisterRecycling extends AppCompatActivity {
         buttonAdd.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                addRecycledMaterial();
+                if (monthlyBonuses < 3) {
+                    addRecycledMaterial();
+                    monthlyBonuses++;
+                } else {
+                    Toast.makeText(RegisterRecycling.this, "Has alcanzado el límite de bonos para este mes.", Toast.LENGTH_SHORT).show();
+                }
             }
         });
+
 
         buttonMenu.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -96,9 +105,10 @@ public class RegisterRecycling extends AppCompatActivity {
                     textViewPoints.setText(pointsText);
                 }
 
+
             }
         });
-        
+
 
 
         // Crear un ArrayAdapter usando el string array y un default spinner layout
@@ -254,9 +264,25 @@ public class RegisterRecycling extends AppCompatActivity {
         rewardsAdapter.notifyDataSetChanged();
         Object updatePoints;
 
-    }
+        // Clear the rewards list
+        rewardsList.clear();
+        rewardsAdapter.notifyDataSetChanged();
 
+        // Update the points TextView
+        textViewPoints.setText("Points: 0");
+
+        // Clear the quantity EditText
+        editTextQuantity.setText("");
+
+        // Reset monthly bonuses
+        monthlyBonuses = 0;
+    }
 }
+
+
+
+
+
 
 
 
