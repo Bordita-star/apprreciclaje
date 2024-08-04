@@ -20,9 +20,7 @@ public class MenuPrincipal extends AppCompatActivity {
 
         Button consejos = findViewById(R.id.button10);
         Button beneficios = findViewById(R.id.button11);
-        Button contador = findViewById(R.id.button12);
         Button recycling = findViewById(R.id.button13);
-        Button categorizacíon = findViewById(R.id.button19);
         Button cerrarSesion = findViewById(R.id.button14);
 
         consejos.setOnClickListener(new View.OnClickListener() {
@@ -41,26 +39,11 @@ public class MenuPrincipal extends AppCompatActivity {
             }
         });
 
-        contador.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent Contador = new Intent(MenuPrincipal.this, ContadorRecompensa.class);
-                startActivity(Contador);
-            }
-        });
-
         recycling.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent RegisterRecycling = new Intent(MenuPrincipal.this,com.example.reciclajeapp.RegisterRecycling.class);
                 startActivity(RegisterRecycling );
-            }
-        });
-        categorizacíon.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent Categorizacion = new Intent(MenuPrincipal.this, com.example.reciclajeapp.Categorizacion.class);
-                startActivity(Categorizacion);
             }
         });
 

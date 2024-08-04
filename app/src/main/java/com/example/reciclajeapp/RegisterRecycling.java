@@ -100,7 +100,7 @@ public class RegisterRecycling extends AppCompatActivity {
                 updatePointsView();
 
                 // Método para actualizar la vista de puntos
-               View  updatePointsView; {
+                View  updatePointsView; {
                     String pointsText = "Puntos acumulados: " + (pointsCarton + pointsPlastico + pointsVidrio + pointsLata);
                     textViewPoints.setText(pointsText);
                 }
@@ -278,34 +278,3 @@ public class RegisterRecycling extends AppCompatActivity {
         monthlyBonuses = 0;
     }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

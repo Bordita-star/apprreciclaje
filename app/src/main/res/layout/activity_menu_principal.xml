@@ -60,31 +60,11 @@
             android:textSize="25dp"/>
 
         <Button
-            android:id="@+id/button12"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginTop="15dp"
-            android:textSize="25dp"
-            android:backgroundTint="#9A1C5F1F"
-            android:text="Contador recompensa" />
-
-        <Button
             android:id="@+id/button13"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:text="Registrar reciclaje"
-            android:layout_marginTop="15dp"
-            android:backgroundTint="#9A1C5F1F"
-            android:textSize="25dp"/>
-
-        <Button
-            android:id="@+id/button19"
-            android:layout_width="350dp"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:text="Categorización"
             android:layout_marginTop="15dp"
             android:backgroundTint="#9A1C5F1F"
             android:textSize="25dp"/>
