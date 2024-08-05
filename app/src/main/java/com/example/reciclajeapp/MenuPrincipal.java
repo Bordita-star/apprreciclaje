@@ -1,5 +1,7 @@
 package com.example.reciclajeapp;
 
+import static com.example.reciclajeapp.R.id.buttonestadisticas;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
@@ -21,6 +23,7 @@ public class MenuPrincipal extends AppCompatActivity {
         Button consejos = findViewById(R.id.button10);
         Button beneficios = findViewById(R.id.button11);
         Button recycling = findViewById(R.id.button13);
+        Button estadisticas = findViewById(buttonestadisticas);
         Button cerrarSesion = findViewById(R.id.button14);
 
         consejos.setOnClickListener(new View.OnClickListener() {
@@ -44,6 +47,14 @@ public class MenuPrincipal extends AppCompatActivity {
             public void onClick(View v) {
                 Intent RegisterRecycling = new Intent(MenuPrincipal.this,com.example.reciclajeapp.RegisterRecycling.class);
                 startActivity(RegisterRecycling );
+            }
+        });
+
+        estadisticas.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent Estadisticas = new Intent(MenuPrincipal.this, Activity_Statistics.class);
+                startActivity(Estadisticas);
             }
         });
 

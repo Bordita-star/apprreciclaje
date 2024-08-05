@@ -45,7 +45,7 @@ dependencies {
     implementation("com.google.android.material:material:1.9.0")
     implementation("androidx.constraintlayout:constraintlayout:2.1.4")
     implementation("com.sun.mail:android-mail:1.6.2")
-
+    implementation("com.github.PhilJay:MPAndroidChart:v3.1.0")
     }
 
 
