@@ -73,7 +73,7 @@
             android:id="@+id/button14"
             android:layout_width="350dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="70dp"
+            android:layout_marginTop="140dp"
             android:layout_gravity="center"
             android:backgroundTint="#9A1C5F1F"
             android:textSize="20dp"
