@@ -1,7 +1,10 @@
 package com.example.reciclajeapp;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -24,6 +27,17 @@ public class Activity_Statistics extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_statistics);
+
+
+        Button regresarmenu = findViewById(R.id.buttonvolver);
+
+        regresarmenu.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent volveramenu = new Intent(Activity_Statistics.this,MenuPrincipal.class);
+                startActivity(volveramenu);
+            }
+        });
 
         // Datos de ejemplo para el gráfico (material, cantidad en kg)
         HashMap<String, Integer> materialesReciclados = new HashMap<>();
@@ -74,4 +88,5 @@ public class Activity_Statistics extends AppCompatActivity {
         // Actualizar el gráfico
         chart.invalidate();
     }
+
 }
